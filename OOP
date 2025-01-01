@@ -1,0 +1,42 @@
+class Ship:
+    def __init__(self, size):
+        self.size = size
+        self.hits = 0
+        self.is_sunk = False
+        self.coordinates = []
+
+    def hit(self):
+        self.hits += 1
+        if self.hits == self.size:
+            self.is_sunk = True
+
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.board = [[' ' for _ in range(10)] for _ in range(10)] 
+        self.ships = []
+
+    def place_ship(self, ship, coordinates):
+        # ... (implementation to place ship on board) ...
+
+    def fire_shot(self, row, col):
+        # ... (implementation to fire a shot and update opponent's board) ...
+
+class Game:
+    def __init__(self, player1, player2):
+        self.player1 = player1
+        self.player2 = player2
+        self.current_player = player1
+
+    def start_game():
+        # ... (implementation to initialize and start the game) ...
+
+    def play_round():
+        # ... (implementation to handle a single round of the game) ...
+
+# Example usage:
+player1 = Player("Player 1")
+player2 = Player("Player 2")
+game = Game(player1, player2)
+game.star
+t_game()
